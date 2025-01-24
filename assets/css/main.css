@@ -824,3 +824,129 @@ button{
         width: 100%;
     }
 }
+
+/* Contact Us Page */
+.contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px 10%;
+    background: linear-gradient(to bottom, rgba(4, 60, 170, 0.5), rgba(11, 67, 180, 0.05));
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .contact-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .contact-content h1 {
+    font-size: 2.5rem;
+    color: #003745;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .contact-form {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto; /* Centered on smaller screens */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003745;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #003745;
+    box-shadow: 0 0 5px rgba(4, 60, 170, 0.5);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .contact-form .btn {
+    background-color: #003745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #005a6b;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    .contact-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .contact-content {
+      flex: 1;
+      padding-right: 30px;
+    }
+  
+    .contact-form {
+      flex: 1;
+      width: 100%; /* Form takes full width of its column */
+    }
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 767px) {
+    .contact-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-form {
+      width: 80%; /* Center the form on mobile */
+    }
+  
+    .contact-content {
+      margin-bottom: 30px;
+    }
+  }
+  
